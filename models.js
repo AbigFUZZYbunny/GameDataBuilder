@@ -1,10 +1,10 @@
 const def_attributetypes = ["Resource", "Stat", "Mastery", "Attribute", "Title"];
-const def_rarity = ["Junk", "Common", "Uncommon", "Rare", "];
+const def_rarity = ["Junk", "Common", "Uncommon", "Rare", "Special", "Heroic", "Legendary", "Unique"];
 const def_attribute = {
 	id: 0,
 	name: "",
-	type: 3,
-	rarity: 0,
+	type: def_attributetypes[3],
+	rarity: def_rarity[0],
 	localization: {
 		lang: "en_us",
 		name: "New Attribute",
@@ -19,7 +19,7 @@ const def_attribute = {
 		}
 	},
 	modifiers: {
-		1: def_modifier
+		1: [ def_modifier ]
 	},
 	value: {
 		amount: 0,
@@ -53,7 +53,7 @@ const def_attribute = {
 const def_modifier = {
 	id: 0,
 	name: "",
-	rarity: 0,
+	rarity: def_rarity[0],
 	localization: {
 		lang: "en_us",
 		name: "New Modifier",
