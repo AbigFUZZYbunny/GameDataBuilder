@@ -20,14 +20,27 @@ const def_attribute = {
 		amount: 0,
 		maxamount: 100,
 		minamount: 0,
-		gainmult: 1,
-		lossmult: 1,
-		maxmult: 1,
-		minmult: 1
+		multiplier:{
+			gain: 1,
+			loss: 1,
+			max: 1,
+			min: 1
+		},
 		regen: {
 			amount: 1,
 			tick: 0.1,
-			mult: 1
+			multiplier: {
+				combat: 0,
+				walk: 0.5,
+				run: -1,
+				swim: -0.2,
+				sprint: -2,
+				crouch: 0.7,
+				prone: 1,
+				eating: 0,
+				sleeping: 2,
+				sitting: 1
+			}
 		}
 	}
 }
