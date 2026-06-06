@@ -1,7 +1,10 @@
+const def_attributetypes = ["Resource", "Stat", "Mastery", "Attribute", "Title"];
+const def_rarity = ["Junk", "Common", "Uncommon", "Rare", "];
 const def_attribute = {
 	id: 0,
 	name: "",
 	type: 3,
+	rarity: 0,
 	localization: {
 		lang: "en_us",
 		name: "New Attribute",
@@ -15,7 +18,9 @@ const def_attribute = {
 			}
 		}
 	},
-	modifiers: [],
+	modifiers: {
+		1: def_modifier
+	},
 	value: {
 		amount: 0,
 		maxamount: 100,
@@ -43,6 +48,25 @@ const def_attribute = {
 			}
 		}
 	}
-}
+},
 
-const def_attributetypes = ["Resource", "Stat", "Mastery", "Attribute", "Title"];
+const def_modifier = {
+	id: 0,
+	name: "",
+	rarity: 0,
+	localization: {
+		lang: "en_us",
+		name: "New Modifier",
+		desc: "This is a new modifier",
+		tooltip: "This modifier has not been configured",
+		icon: {
+			path: "",
+			size: {
+				x: 16,
+				y: 16
+			}
+		}
+	},
+	recurring: false,
+	effects: []
+}
